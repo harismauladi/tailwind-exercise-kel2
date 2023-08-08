@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/tailwind-icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Tailwind Exercise</title>
+  </head>
+  <body>
+    <!-- HEADER AND NAV START -->
+    <header class="font-poppins">
+      <nav
+        class="flex justify-between p-3 shadow-md fixed w-full z-[99999999] bg-white"
+      >
+        <div class="flex">
+          <div>
+            <h1 class="font-semibold text-lg">Fintech</h1>
+          </div>
+          <div>
+            <svg width="15" height="15">
+              <circle cx="10" cy="8" r="4" fill="yellow" class="rounded-full" />
+            </svg>
+          </div>
+        </div>
+        <div class="text-sm my-[0.3rem] font-medium hidden sm:block">
+          <a href="#" class="mx-2 hover:text-yellow-300">Platform</a>
+          <a href="#" class="mx-2 hover:text-yellow-300">Company</a>
+          <a href="#" class="mx-2 hover:text-yellow-300">Industries</a>
+          <a href="#" class="mx-2 hover:text-yellow-300">Resources</a>
+        </div>
+        <div class="text-xs font-medium flex">
+          <button
+            class="mx-2 border pl-3 pr-3 pt-1 pb-1 rounded-full border-black hover:bg-yellow-300 hover:text-white hover:border-white hidden sm:block"
+          >
+            SIGN IN
+          </button>
+          <button
+            class="mx-2 pl-4 pr-4 pt-1 pb-1 rounded-full bg-black text-white hover:bg-yellow-300 hover:border-white"
+          >
+            SIGN UP
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER AND NAV END -->
+    <!-- MAIN AND HERO SECTION START -->
+    <main class="w-full">
+      <section class="container flex p-3 font-poppins max-[480px]:flex-wrap">
+        <div
+          class="flex flex-col relative top-44 p-2 flex-grow max-[480px]:top-14"
+        >
+          <h2 class="text-5xl flex font-bold">
+            All banks are worried about fintech ind.
+          </h2>
+          <p class="my-2 text-gray-400 font-[100]">
+            We help you to get any way you want, with the least amount of
+            hassle. it's just one of the reason we are the most trusted name.
+          </p>
+          <div class="m-3 flex">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Business Email"
+              class="border p-1 border-gray-800"
+            />
+            <button
+              class="p-2 bg-yellow-300 border border-gray-800 relative text-white hover:bg-yellow-500"
+            >
+              Get started
+            </button>
+          </div>
+          <div class="flex flex-row">
+            <div class="flex shadow-md max-w-[10rem] rounded-xl mx-2">
+              <div class="justify-center flex items-center p-2">
+                <div class="bg-yellow-300 rounded-full p-1">
+                  <img src="./assets/icon1.svg" alt="" />
+                </div>
+              </div>
+              <div class="felx flex-col p-3 max-w-xs">
+                <h4 class="text-[0.6rem] text-gray-400">Total Earning</h4>
+                <p class="font-bold text-xl">$ 22k</p>
+                <p class="text-[0.6rem] text-gray-400">+10.80%</p>
+              </div>
+            </div>
+            <div class="flex shadow-md max-w-[10rem] rounded-xl mx-2">
+              <div class="justify-center flex items-center p-2">
+                <div class="bg-yellow-300 rounded-full p-1">
+                  <img src="./assets/money-2-icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="felx flex-col p-3 max-w-xs">
+                <h4 class="text-[0.6rem] text-gray-400">Total Earning</h4>
+                <p class="font-bold text-xl">$ 18k</p>
+                <p class="text-[0.6rem] text-gray-400">+8.50%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative max-[480px]:top-14 z-[-99999999]">
+          <img src="./assets/home.svg" alt="" />
+        </div>
+      </section>
+    </main>
+    <!-- MAIN AND HERO SECTION END -->
+    <!-- FOOTER START -->
+    <footer class="w-full min-h-full font-poppins">
+      <section
+        class="w-full flex p-20 font-poppins max-[480px]:flex-wrap bg-yellow-50 justify-between min-h-full relative top-14"
+      >
+        <div class="flex flex-col">
+          <div class="relative left-2">
+            <img src="./assets//bank-icon.svg" alt="" />
+          </div>
+          <p class="text-[0.6rem] text-center font-semibold max-w-[5rem]">
+            Improved collection performance
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="max-w-[4rem] relative left-2">
+            <img src="./assets/wallet-icon.svg" alt="" />
+          </div>
+          <p class="text-[0.6rem] text-center font-semibold max-w-[5rem]">
+            Convenient, local payment options
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="max-w-[4rem] relative left-2">
+            <img src="./assets//money-icon.svg" alt="" />
+          </div>
+          <p class="text-[0.6rem] text-center font-semibold max-w-[5rem]">
+            The best price guarantee
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="max-w-[4rem] sm:max-w-[10rem]">
+            <img src="./assets/graph-icon.svg" alt="" />
+          </div>
+          <p
+            class="text-[0.6rem] text-center font-semibold max-w-[5rem] lg:max-w-[10rem]"
+          >
+            Good prospect
+          </p>
+        </div>
+      </section>
+    </footer>
+    <!-- FOOTER END -->
+  </body>
+</html>
